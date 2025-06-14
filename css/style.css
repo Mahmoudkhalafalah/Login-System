@@ -1,0 +1,175 @@
+body {
+    font-family: "PT Sans Caption", sans-serif;
+    background-color: #f7ecde;
+}
+
+*::selection {
+    background-color: #fec260;
+    color: black;
+}
+
+.title {
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    color: #352e28;
+    position: relative;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    width: 265px;
+    height: 25%;
+    bottom: 10px;
+    z-index: -1;
+    background-color: #fec260;
+    transition: all 0.4s;
+}
+
+.title:hover::before {
+    height: 50%;
+}
+
+.main-content {
+    border-bottom: 2px black dotted;
+    border-top: 2px black dotted;
+}
+
+.main-content h2 {
+    font-family: "Righteous", cursive;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+}
+
+.main-content h2::after,
+.main-content h2::before {
+    font-family: "Font Awesome 6 Free";
+    font: var(--fa-font-solid);
+    content: '\f02e';
+}
+
+.main-content label {
+    display: block;
+    text-align: start;
+}
+
+.main-content input {
+    border: 1px solid #eee;
+}
+
+.main-content input:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #fec260;
+}
+
+.error:focus {
+    box-shadow: 0 0 5px 2px #fd4453 !important;
+}
+
+.error {
+    border: 1px solid red !important;
+}
+.good:focus {
+    box-shadow: 0 0 5px 2px #46b82f !important;
+}
+
+.good {
+    border: 1px solid #46b82f !important;
+}
+
+.error-icon {
+    position: absolute;
+    padding: 10px;
+    min-width: 40px;
+    color: red;
+}
+.good-icon {
+    position: absolute;
+    padding: 10px;
+    min-width: 40px;
+    color: #46b82f;
+}
+
+label[for="site-name"]::before {
+    font-family: "Font Awesome 6 Free";
+    font: var(--fa-font-solid);
+    content: '\e0bb';
+    padding-right: 10px;
+}
+
+label[for="site-url"]::before {
+    font-family: "Font Awesome 6 Free";
+    font: var(--fa-font-solid);
+    content: '\f0c1';
+    padding-right: 7px;
+}
+
+.btn-submit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+    padding: 6px 48px;
+}
+
+.books-list table>*>*>* {
+    padding: 0.5rem 0.5rem;
+}
+.books-list table tr{
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.btn-visit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #9eb23b;
+    --bs-btn-border-color: #9eb23b;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #8a9e23;
+    --bs-btn-hover-border-color: #6e8018;
+}
+
+.btn-delete {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #eb1d36;
+    --bs-btn-border-color: #eb1d36;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #d30820;
+    --bs-btn-hover-border-color: #ba081d;
+}
+.error-dialog{
+    
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+.message-container{
+
+    border-radius: 5px;
+    width: 40%;
+
+}
+.message-container p{
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #352e28;
+}
+.circle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.icons-container{
+    cursor: pointer;
+}
+.message-container ul i{
+    color: #d1512d ;
+}
+.message-container ul li{
+    font-family: inherit;
+    font-size: 18px;
+    padding-top: 10px;
+}
