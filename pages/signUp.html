@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Login System
     </title>
 </head>
@@ -26,24 +26,27 @@
                 <h1 class="title text-info">Smart Login System</h1>
                 <div class="form-container">
                     <div class="email-input" >
-                        <input type="email" id="signInEmailField" name="email" placeholder="Enter Your Email" class="form-control my-3 bg-transparent text-white" oninput="validateInput(this, 0)">
+                        <input type="text" id="signUpNameField" name="email" placeholder="Enter Your Name" class="form-control my-3 bg-transparent text-white" oninput="validateInput(this, 2)">
+                    </div>
+                    <div class="email-input" >
+                        <input type="email" id="signUpEmailField" name="email" placeholder="Enter Your Email" class="form-control my-3 bg-transparent text-white" oninput="validateInput(this, 0)">
                     </div>
                     <div class="password-input" >
-                        <input type="password" id="signInPasswordField" name="password" placeholder="Enter Your Password" class="form-control my-3 bg-transparent text-white" oninput="validateInput(this, 1)">
+                        <input type="password" id="signUpPasswordField" name="password" placeholder="Enter Your Password" class="form-control my-3 bg-transparent text-white" oninput="validateInput(this, 1)">
                     </div>
-                    <div id="signInErrorMessage" class="d-none fs-5">
-                        <p class="text-danger" id="signInErrorMessageText">All inputs is required</p>
+                    <div id="signUpMessage" class="d-none fs-5">
+                        <p class="text-danger" id="signUpMessageText"></p>
                     </div>
-                    <button class="btn w-100 btn-outline-info my-3" onclick="checkSignInCredentials()">Login</button>
-                </div>
+                    <button class="btn w-100 btn-outline-info my-3" onclick="insertUser()">Sign Up</button>
+                </div>  
                 <div class="SignUpText text-white">
-                    <p>Don’t have an account? <a href="pages/signUp.html" class="text-decoration-none text-white">Sign Up</a></p>
+                    <p>Already has an account? <a href="../index.html" class="text-decoration-none text-white">Sign in</a></p>
                 </div>
             </div>  
         </div>
     </Main>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
