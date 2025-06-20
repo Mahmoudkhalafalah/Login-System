@@ -62,7 +62,7 @@ function checkSignInCredentials() {
             if (users[userIndex].password == signInPasswordField.value) {
                 signInErrorMessage.classList.add("d-none");
                 //userName = users[userIndex].name;
-                window.location.href("https://mahmoudkhalafalah.github.io/pages/profile.html");
+                window.location.href("https://mahmoudkhalafalah.github.io/Login-System/pages/profile.html");
                 setUserName(users[userIndex].name);
                 console.log("ok");
 
