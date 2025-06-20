@@ -62,7 +62,7 @@ function checkSignInCredentials() {
             if (users[userIndex].password == signInPasswordField.value) {
                 signInErrorMessage.classList.add("d-none");
                 //userName = users[userIndex].name;
-                window.location.replace("Login-System/pages/profile.html");
+                window.location.replace("./pages/profile.html");
                 setUserName(users[userIndex].name);
                 console.log("ok");
 
